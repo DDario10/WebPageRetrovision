@@ -1,0 +1,335 @@
+
+html{
+  background-color: #ddcfbc;
+}
+/*.topnav {
+    background-color: #21637c;
+    overflow: hidden;
+  }
+  
+ 
+  
+  .topnav a {
+    float: left;
+    color: #f1f1f5;
+    text-align: center;
+    padding: 14px 16px;
+    text-decoration: none;
+    font-size: 17px;
+    
+  }
+
+  
+ 
+  .topnav a:hover {
+    background-color: #21639c;
+    color: black;
+  }*/
+  
+  form {
+    border: 3px solid #f1f1f1;
+  }
+
+.topnav
+{
+  width: 100%;
+  max-width: 700px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  padding: 24px 40 px;
+  background: transparent; 
+  backdrop-filter: blur(10px);
+}
+
+.topnav 
+{
+  display: flex;
+  gap: 1.75rem;
+  list-style: none;
+}
+
+
+.topnav .page
+{
+  color: #fff;
+  padding: 0.5rem 0.75rem;
+  position: relative;
+  
+}
+
+.topnav .page::before
+{
+  content: "";
+  position: absolute;
+  bottom:  0;
+  left: 0;
+  width: 0;
+  height: 2px;
+  background: #21637c;
+  z-index: -1;
+
+}
+
+.topnav .page:hover::before
+{
+  animation: fill 1s forwards;
+}
+
+@keyframes fill {
+  0%{width: 0%;}
+  50%
+  {
+    width: 100%;
+    height: 2px;
+  }
+  100%{
+    width: 100%;
+    height: 100%;
+    background:hsl(191, 91%, 26%);
+  }
+}
+  
+  /* Full-width inputs */
+  input[type=text], input[type=password],input[type=email],
+  input[type=tel],input[type=date],
+  input[type=time],input[type=mail],input[type=range],
+  input[type=url] {
+    width: 100%;
+    padding: 12px 20px;
+    margin: 8px 0;
+    display: inline-block;
+    border: 2px solid #21637c;
+    box-sizing: border-box;
+  }
+  .slidecontainer {
+    width: 100%; /* Width of the outside container */
+  }
+  
+  /* The slider itself */
+  .slider {
+    -webkit-appearance: none;  /* Override default CSS styles */
+    appearance: none;
+    width: 100%; /* Full-width */
+    height: 25px; /* Specified height */
+    
+    outline: none; /* Remove outline */
+    opacity: 0.7; /* Set transparency (for mouse-over effects on hover) */
+    -webkit-transition: .2s; /* 0.2 seconds transition on hover */
+    transition: opacity .2s;
+  }
+  
+  /* Mouse-over effects */
+  .slider:hover {
+    opacity: 1; /* Fully shown on mouse-over */
+  }
+  
+  /* The slider handle (use -webkit- (Chrome, Opera, Safari, Edge) and -moz- (Firefox) to override default look) */
+  .slider::-webkit-slider-thumb {
+    -webkit-appearance: none; /* Override default look */
+    appearance: none;
+    width: 25px; /* Set a specific slider handle width */
+    height: 25px; /* Slider handle height */
+    background: #04AA6D; /* Green background */
+    cursor: pointer; /* Cursor on hover */
+  }
+  
+  .slider::-moz-range-thumb {
+    width: 25px; /* Set a specific slider handle width */
+    height: 25px; /* Slider handle height */
+    background: #04AA6D; /* Green background */
+    cursor: pointer; /* Cursor on hover */
+  }
+  /* Set a style for all buttons */
+  button {
+    background-color: #04AA6D;
+    color: white;
+    padding: 14px 20px;
+    margin: 8px 0;
+    border: none;
+    cursor: pointer;
+    width: 100%;
+  }
+
+  
+  /* Add a hover effect for buttons */
+  button:hover {
+    opacity: 0.8;
+  }
+  
+  /* Extra style for the cancel button (red) */
+  .cancelbtn {
+    width: auto;
+    padding: 10px 18px;
+    background-color: #f44336;
+  }
+  
+  /* Center the avatar image inside this container */
+  .imgcontainer {
+    text-align: center;
+    margin: 24px 0 12px 0;
+  }
+  
+  /* Avatar image */
+  img.avatar {
+    width: 40%;
+    border-radius: 50%;
+  }
+  
+  /* Add padding to containers */
+  .container {
+    padding: 16px;
+  }
+  
+  /* The "Forgot password" text */
+  span.psw {
+    float: right;
+    padding-top: 16px;
+  }
+  
+  /* Change styles for span and cancel button on extra small screens */
+  @media screen and (max-width: 300px) {
+    span.psw {
+      display: block;
+      float: none;
+    }
+    .cancelbtn {
+      width: 100%;
+    }
+    .topnav{
+      width: 100%;
+    }
+  }
+
+  .slideshow {
+    width: 80vw;
+    height: 50vmin;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    gap: var(--gap);
+    padding-left: 10%;
+  }
+
+  .slideshow img {
+    --brightness: 0.75;
+    --grayscale: 1;
+    transition: flex var(--transition), filter var(--transition);
+    height: 100%;
+    filter: grayscale(var(--grayscale)) brightness(var(--brightness));
+    object-fit: cover;
+    overflow: hidden;
+    flex: 1;
+  }
+  
+  img:hover {
+    --brightness: 1.15;
+    --grayscale: 0;
+    flex: var(--magnifier);
+  }
+  :root {
+    --magnifier: 6;
+    --gap: 1vmin;
+    --transition: 0.5s;
+  }
+  
+  table,tr,td {
+    border: 1px solid;
+    border-color: #21637c;
+    border-collapse: collapse;
+    width: 30%;
+    padding: 2px;
+    text-align: left;
+  }
+  tr:hover
+  {
+    background-color: #21639c;
+  }
+
+  .flex-container
+  {
+    display: flex;
+    height: 200px;
+    align-items: baseline;
+
+  }
+
+  .text-container
+  {
+    width: 60%;
+    padding-left: 20%;
+    padding-right: 20%;
+  }
+
+  .card{
+    width: 512px;
+    height: 342px;
+    border-radius: 8px;
+    position: relative;
+  }
+  .card .content p
+  {
+    opacity: 0;
+    
+  }
+
+  .card .image-box img{
+    width: 100%;
+    height: 100%;
+    filter: grayscale(1);
+    object-fit: cover;
+    transition: 0.5 ease-in-out;
+  }
+
+  .card::after
+  {
+    content:"";
+    position:absolute;
+    inset: 0;
+    border: 2px solid white;
+    border-radius: inherit;
+    opacity: 0;
+    transition: 0.4s ease-in-out;
+  }
+  
+  .card:hover img{
+    filter: 
+    grayscale(0)
+    brightness(0.5);
+  }
+
+  .card:hover::after
+  {
+    opacity: 1;
+    inset: 20px;
+
+  }
+
+  .card .content h2
+  {
+    opacity: 0 ;
+    
+  }
+
+  .card:hover .content h2
+  {
+    scale: 1;
+    opacity: 1;
+    width: 60%;
+    padding-left: 37%;
+    position: absolute;
+    bottom: 200px;
+    color: #fff;
+  }
+
+  .card:hover .content p
+  {
+    opacity: 1;
+    width: 60%;
+    padding-left: 20%;
+   
+    position: absolute;
+    bottom: 50px;
+    color: #fff;
+   
+  }

@@ -1,0 +1,95 @@
+<!DOCTYPE html>
+<html>
+    <link rel="stylesheet" href="css/stil.css">
+    <title>Inregistrare</title>
+    <head>
+      <nav>
+            
+        <div class="topnav">
+            <a  id="icon" href="index.html"><img src="imagini/LogoBg.jpg"
+                alt="" 
+                style="width:42px;height:42px;"></a>
+            <a href="inregistreaza.html"class="page">Inregistreaza-te</a>
+            <a href="BMW635CSi.html" class="page">BMW 635CSi</a>
+            <a href="video.html" class="page">Video</a>
+            <a href="despre.html" class="page">Despre</a>
+            <a href="desen.html" class="page">Desen</a>
+            <a href="invat.html" class="page">Invat</a>
+          </div>
+    </nav>
+        </head>
+    <body>
+        <h3>Informatii generale: </h3>
+
+        <form action="action_page.php" method="post">
+            <div class="imgcontainer">
+              
+            </div>
+          
+            <div class="container">
+              <label for="uname"><b>Nume Utilizator</b></label>
+              <input type="text" placeholder="Nume utilizator" name="uname" required>
+          
+              <label for="psw"><b>Parola</b></label>
+              <input type="password" placeholder="Parola" name="psw" required>
+          
+              <button type="submit">Inregistreaza-te</button>
+              <label>
+                <input type="checkbox" checked="checked" name="remember"> Remember me
+              </label>
+            </div>
+          
+            <div class="container" style="background-color:#f1f1f1">
+              <button type="button" class="cancelbtn">Renunta</button>
+              <span class="psw"><a href="#">Ai uitat parola?</a></span>
+            </div>
+          </form>
+
+                <h3>Informatii personale: </h3>
+        <form>
+            <label for="gen">Gen:  </label>
+        <select id="gen" name="gen">
+            <option value="none"> -- </option>
+            <option value="masculin">Masculin</option>
+            <option value="feminin">Feminin</option>
+            <option value="altul">Altul</option>
+        </select>
+        <br>
+        <label for="food">Mancare preferata: </label>
+        <input list="foods" name="food" id="food">
+        <datalist id="foods">
+            <option value = "Carnuri"></option>
+            <option value = "Legume si fructe"></option>
+            <option value = "Vegetarian"></option>
+            <option value = "lactate si branzeturi"></option>
+            <option value = "Produse de patiserie"></option>
+            <option value = "Mancaruri de strada"></option>
+            <option value = "Mancaruri traditionale"></option>
+            <option value = "Mancaruri exotice"></option>
+        </datalist>
+        <br>
+        <label for="favcolor">Culoarea preferata:</label>
+        <input type="color" id="favcolor" name="favcolor" value="#ff0000">
+        <br>
+        <label for="birthday">Data de nastere: </label>
+        <input type="date" id="birthday" name="birthday">
+        <br>
+        <div>
+        <label for="ora nastere">Ora nasterii: </label>
+        <input type="time" id="ora nastere" name="ora nastere">
+        <br>
+        <label for="points">Varsta: </label>
+        <div class="slidecontainer">
+            <input type="range" min="1" max="100" value="50" class="slider" id="myRange">
+          </div>
+        <br>
+        <label for="paginapers">Pagina personala:</label>
+        <input type="url" id="paginapers" name="paginapers">
+        
+        <p>Descriere: </p>
+        <textarea name="comment" form="usrform"></textarea>
+        </form>
+        
+          
+    </body>
+</html>
