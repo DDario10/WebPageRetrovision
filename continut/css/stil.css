@@ -25,20 +25,28 @@ html{
     background-color: #21639c;
     color: black;
   }*/
-  
+  *
+  {
+    border-radius: 12px;
+  }
   form {
+    
     border: 3px solid #f1f1f1;
+    border-radius: 12px;
+    margin-left: 20%;
+    margin-right: 20%;
+    
   }
 
 .topnav
 {
   width: 100%;
-  max-width: 700px;
+ 
   display: flex;
   justify-content: center;
   align-items: center;
-  padding: 24px 40 px;
-  background: transparent; 
+  padding: 24px 40px;
+  background: linear-gradient(rgb(4, 100, 117),transparent); 
   backdrop-filter: blur(10px);
 }
 
@@ -73,7 +81,7 @@ html{
 
 .topnav .page:hover::before
 {
-  animation: fill 1s forwards;
+  animation: fill 400ms forwards;
 }
 
 @keyframes fill {
@@ -256,7 +264,6 @@ html{
 
   .text-container
   {
-    width: 60%;
     padding-left: 20%;
     padding-right: 20%;
   }
@@ -333,3 +340,35 @@ html{
     color: #fff;
    
   }
+canvas{
+  border: 1px solid black;
+}
+
+/*
+
+*/
+
+ 
+aside {
+  height: 50%;
+  width: 10%;
+  position:sticky;
+  top: 0;
+  left: 0;
+  background-color:#c1a780;
+  border-radius: 12px;
+  padding-top:0px;
+}
+
+aside a {
+  display: block;
+  padding: 10px;
+  text-decoration: none;
+  color: black;
+}
+
+aside a:hover {
+  background-color: #ddd;
+  border-radius: 12px;
+}
+

@@ -1,0 +1,34 @@
+
+    <section>
+        <fieldset>
+            <legend></legend>
+            <label for="nume">Nume:</label>
+            <br/><input id="nume:" type="text" /><br/><br/> <!-- Am corectat identificatorul aici -->
+            <label for="cantitate">Cantitate:</label>
+            <br/><input id="cantitate" type="number" /><br/>
+            <br/>&nbsp;&nbsp;<button type="button" onclick="adaugaProduse()">Adaugă în coș</button>
+        </fieldset> 
+
+        <p>Modul de salvare al produselor:</p>
+        <input type="radio" id="local_storage" name="optiune">
+        <label>Local storage</label> <br>
+        <input type="radio" id="index_DB" name="optiune">
+        <label>IndexDB</label> <br>
+
+        <p>Produsele din lista de cumpărături sunt:</p>
+
+        <table id="tabelProduse">
+            <tr>
+                <th>Id</th>
+                <th>Nume</th>
+                <th>Cantitate</th>
+            </tr>
+        </table>
+
+        <!-- Div-ul pentru afișarea produselor adăugate în coș -->
+        <div id="listaCumparaturi"></div>
+
+    </section>
+
+    <hr />
+    

@@ -1,0 +1,39 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<persoane>
+    <persoana id="1">
+        <nume>Sadoveanu</nume>
+        <prenume>Mihail</prenume>
+        <varsta>23</varsta>
+        <adresa>
+            <strada>Stefan cel Mare</strada>
+            <numar>9</numar>
+            <localitate>Pascani</localitate>
+        <judet>Iasi</judet>
+        <tara>Romania</tara>
+        </adresa>
+    </persoana>
+    <persoana id="2">
+        <nume>Dinescu</nume>
+        <prenume>Constantin</prenume>
+        <varsta>41</varsta>
+        <adresa>
+            <strada>Aleea Rozelor</strada>
+            <numar>2</numar>
+            <localitate>Iasi</localitate>
+        <judet>Iasi</judet>
+        <tara>Romania</tara>
+        </adresa>
+    </persoana>
+    <persoana id="3">
+        <nume>Lambrache</nume>
+        <prenume>Filip</prenume>
+        <varsta>21</varsta>
+        <adresa>
+            <strada>Constantin Brancusi</strada>
+            <numar>64</numar>
+            <localitate>Targu Jiu</localitate>
+        <judet>Gorj</judet>
+        <tara>Romania</tara>
+        </adresa>
+    </persoana>
+</persoane>

@@ -1,43 +1,22 @@
-<!DOCTYPE html>
-<html>
-    <link rel="stylesheet" href="css/stil.css">
-    <title>Inregistrare</title>
-    <head>
-      <nav>
-            
-        <div class="topnav">
-            <a  id="icon" href="index.html"><img src="imagini/LogoBg.jpg"
-                alt="" 
-                style="width:42px;height:42px;"></a>
-            <a href="inregistreaza.html"class="page">Inregistreaza-te</a>
-            <a href="BMW635CSi.html" class="page">BMW 635CSi</a>
-            <a href="video.html" class="page">Video</a>
-            <a href="despre.html" class="page">Despre</a>
-            <a href="desen.html" class="page">Desen</a>
-            <a href="invat.html" class="page">Invat</a>
-          </div>
-    </nav>
-        </head>
-    <body>
+<div class="text-container">
         <h3>Informatii generale: </h3>
 
-        <form action="action_page.php" method="post">
-            <div class="imgcontainer">
-              
-            </div>
-          
-            <div class="container">
+        <form onsubmit="writeToJSON()">
+          <div class="imgcontainer">
+          </div>
+      
+          <div class="container">
               <label for="uname"><b>Nume Utilizator</b></label>
               <input type="text" placeholder="Nume utilizator" name="uname" required>
-          
+      
               <label for="psw"><b>Parola</b></label>
               <input type="password" placeholder="Parola" name="psw" required>
-          
+      
               <button type="submit">Inregistreaza-te</button>
               <label>
-                <input type="checkbox" checked="checked" name="remember"> Remember me
+                  <input type="checkbox" checked="checked" name="remember"> Remember me
               </label>
-            </div>
+          </div>
           
             <div class="container" style="background-color:#f1f1f1">
               <button type="button" class="cancelbtn">Renunta</button>
@@ -89,7 +68,4 @@
         <p>Descriere: </p>
         <textarea name="comment" form="usrform"></textarea>
         </form>
-        
-          
-    </body>
-</html>
+      </div>

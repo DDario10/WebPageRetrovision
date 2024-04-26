@@ -1,6 +1,9 @@
 <!DOCTYPE html>
 <html>
     <link rel="stylesheet" href="css/stil.css">
+    <script src="js/script.js"></script>
+    <script src="js/persoane.js"></script>
+   
     <title>Acasa</title>
     <head>
         <nav>
@@ -9,26 +12,23 @@
                 <a  id="icon" href="index.html"><img src="imagini/LogoBg.jpg"
                     alt="" 
                     style="width:42px;height:42px;"></a>
-                <a href="inregistreaza.html"class="page">Inregistreaza-te</a>
-                <a href="BMW635CSi.html" class="page">BMW 635CSi</a>
-                <a href="video.html" class="page">Video</a>
-                <a href="despre.html" class="page">Despre</a>
-                <a href="desen.html" class="page">Desen</a>
-                <a href="invat.html" class="page">Invat</a>
+                <a class="page" onclick="schimbaContinut('acasa')">Acasă</a>   
+                <a class="page" onclick="schimbaContinut('inregistreaza')">Inregistreaza-te</a>
+                <a class="page" onclick="schimbaContinut('BMW635CSi')">BMW635CSi</a>
+                <a class="page" onclick="schimbaContinut('AM443T')">AM 443T</a>
+                <a class="page" onclick="schimbaContinut('video')">Video</a>
+                <a class="page" onclick="schimbaContinut('despre')">Despre</a>
+                <a class="page" onclick="schimbaContinut('desen')">Desen</a>
+                <a class="page" onclick="schimbaContinut('invat')">Invat</a>
+                <a class="page" onclick="schimbaContinut('verifica')">Verifica</a>
+                <a class="page" onclick="schimbaContinut('persoane', 'js/persoane.js', 'incarcaPersoane')">Persoane</a>
+                <a class="page" onclick="schimbaContinut('cumparaturi','js/cumparaturi.js')">Cumparaturi</a>
               </div>
         </nav>
-    </head>
-    <body>
-        <div class="card">
-            <div class="image-box">
-                <a href="BMW635CSi.html"><img src="imagini/poza2.webp" style="width:512px;height:342px;"></a>
-            </div>
-        <div class="content">
-            <h2>BMW 635CSi</h2>
-            <p>Cu 40 de ani în urmă, BMW 635 CSi se impunea încă de la prima participare într-o cursă DTM. 
-                Vremuri de glorie și splendoare…</p>
-        </div>
-        </div>
         
-    </body>
+    </head>
+    <main id="continut">
+    
+    </main>
+    
 </html>

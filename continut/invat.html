@@ -1,36 +1,65 @@
-<!DOCTYPE html>
-<html>
-    <link rel="stylesheet" href="css/stil.css">
-    <title>Invat</title>
-    <head>
+
+   
+            <aside id="asideMenu">
+                <a href="#sectiunea_1">Sectiunea 1</a>
+                <a href="#sectiunea_2">Sectiunea 2</a>
+                <a href="#sectiunea_3">Sectiunea 3</a>
+                
+              </aside>
+              
+<div class="text-container"> 
+        <h2 id="sectiunea_1">Sectiunea 1</h2>
+        <section>
+            <p id="DataSiOra"></p>
+            <p id="adresa"></p>
+            <p id="locatia"></p>
+            <p id="browser"></p>
+            <p id="os"></p>
+        </section>
+
+        <section>
+            <h2 id="sectiunea_2">Sectiunea 2</h2>
+            <canvas onclick="sectiunea_2(event)" id="canvas" width="700" height="300"></canvas><br/>
+
+            &nbsp;&nbsp;
+            <label for="contur">Introduceți culoarea pentru contur:</label>
+            <input type="color" id="contur" name="contur" value="#070707">
+            &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+            <label for="umplere">Introduceți culoarea pentru umplere:</label>
+            <input type="color" id="umplere" name="umplere" value="#E10600"><br/>
+       </section>
+
         
-        <nav>
+        <h2 id="sectiunea_3">Sectiunea 3</h2>
+            <table id="myTable">
+              <tr>
+                <th>Header 1</th>
+                <th>Header 2</th>
+                <th>Header 3</th>
+              </tr>
+              <tr>
+                <td>Row 1, Cell 1</td>
+                <td>Row 1, Cell 2</td>
+                <td>Row 1, Cell 3</td>
+              </tr>
+              <tr>
+                <td>Row 2, Cell 1</td>
+                <td>Row 2, Cell 2</td>
+                <td>Row 2, Cell 3</td>
+              </tr>
+            </table>
             
-            <div class="topnav">
-                <a  id="icon" href="index.html"><img src="imagini/LogoBg.jpg"
-                    alt="" 
-                    style="width:42px;height:42px;"></a>
-                <a href="inregistreaza.html"class="page">Inregistreaza-te</a>
-                <a href="BMW635CSi.html" class="page">BMW 635CSi</a>
-                <a href="video.html" class="page">Video</a>
-                <a href="despre.html" class="page">Despre</a>
-                <a href="desen.html" class="page">Desen</a>
-                <a href="invat.html" class="page">Invat</a>
-              </div>
-        </nav>
-    </head>
-    <body>
-        <header>
-            <H2>Sectiunea 1</H2>
-        </header>
-        <aside>
-            <section>
-                <p id="DataSiOra"></p>
-                <p id="adresa"></p>
-                <p id="locatia"></p>
-                <p id="browser"></p>
-                <p id="os"></p>
-            </section>
-        </aside>
-        <script src="js/script.js"></script>
-    </body>
+            <div>
+              <label for="positionInput">Position (row/column):</label>
+              <input type="text" id="positionInput">
+              <label for="colorPicker">Background Color:</label>
+              <input type="color" id="colorPicker">
+              <button onclick="insertRow()">Insert Row</button>
+              <button onclick="insertColumn()">Insert Column</button>
+            </div>
+            
+</div>
+
+
+
+    
